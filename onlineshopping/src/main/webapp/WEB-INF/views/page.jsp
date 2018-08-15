@@ -32,34 +32,34 @@
 </head>
 
 <body>
-<div class="wrapper">
-	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
-	<!-- Page Content -->
-	<div class="content">
-	
-	<c:if test="${userClickHome == true}">
-		<%@include file="home.jsp"%>
-	</c:if>
+	<div class="wrapper">
+		<!-- Navigation -->
+		<%@include file="./shared/navbar.jsp"%>
+		<!-- Page Content -->
+		<div class="content">
 
-	<!-- Loading only when about is clicked -->
-	<c:if test="${userClickAbout == true}">
-		<%@include file="about.jsp"%>
-	</c:if>
+			<c:if test="${userClickHome == true}">
+				<%@include file="home.jsp"%>
+			</c:if>
 
-	<!-- Loading only when contact is clicked -->
-	<c:if test="${userClickContact == true}">
-		<%@include file="contact.jsp"%>
-	</c:if>
-	</div>
-	<!-- Footer -->
-	<%@include file="./shared/footer.jsp"%>
-	<!-- Bootstrap core JavaScript -->
-	<script src="${js}/jquery.js"></script>
-	<script src="${js}/bootstrap.js"></script>
-	<!-- self defined-->
-	<script src="${js}/myapp.js"></script>
-	
+			<!-- Loading only when about is clicked -->
+			<c:if test="${userClickAbout == true}">
+				<%@include file="about.jsp"%>
+			</c:if>
+
+			<!-- Loading only when contact is clicked -->
+			<c:if test="${userClickContact == true}">
+				<%@include file="contact.jsp"%>
+			</c:if>
+		</div>
+		<!-- Footer -->
+		<%@include file="./shared/footer.jsp"%>
+		<!-- Bootstrap core JavaScript -->
+		<script src="${js}/jquery.js"></script>
+		<script src="${js}/bootstrap.js"></script>
+		<!-- self defined-->
+		<script src="${js}/myapp.js"></script>
+
 	</div>
 </body>
 
