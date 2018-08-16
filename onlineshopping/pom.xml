@@ -13,6 +13,13 @@
 		<Spring.version> 5.0.8.RELEASE</Spring.version>
 	</properties>
 	<dependencies>
+		<!-- Backend dependency -->
+			<dependency>
+				<groupId>net.grr</groupId>
+	<artifactId>shoppingbackend</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+			
+			</dependency>
 		<!-- JAVA EE API -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -33,7 +40,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${Spring.version}</version>
 		</dependency>
-	<!-- JSTL -->
+		<!-- JSTL -->
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
